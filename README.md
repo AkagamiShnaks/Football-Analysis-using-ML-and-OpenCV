@@ -1,45 +1,113 @@
-# ⚽ Football Analysis using Machine Learning and OpenCV
+# ⚽ Football Analysis Project
 
-This project presents an intelligent football match analysis system that uses Machine Learning and OpenCV to automatically detect, track, and analyze players, referees, and the ball from match footage. The system generates real-time statistics, visual insights, and tactical analytics from standard broadcast videos.
+This is a computer vision–based football analysis application that detects and tracks players, the ball, and referees from match videos. It estimates player speed, maps ball possession, and generates tactical field insights using Python, OpenCV, and YOLOv5.
+
+---
+
+## 📦 Features
+
+- Real-time player, referee, and ball detection (YOLOv5)
+- Player speed estimation
+- Ball tracking & possession analysis
+- Referee differentiation
+- Team classification via jersey color clustering
+- Tactical zone mapping using pitch keypoints
+- Visualized output with overlays
+- Compatible with any standard match footage
+
+---
+
+## ⚙️ Environment Setup
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/your-username/football_analysis.git
+cd football_analysis
+```
+
+### Step 2: Create and activate a virtual environment (optional but recommended)
+
+```bash
+# For virtualenv
+python -m venv venv
+source venv/bin/activate      # On Windows: venv\Scripts\activate
+```
+
+### Step 3: Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Project Workflow
+
+### 📘 Phase 1: Prepare Input
+
+Add your football match video to the `input_videos/` directory.
+
+---
+
+### 🎯 Phase 2: Run the Analysis
+
+Execute the main script to process the video:
+
+```bash
+python main.py
+```
+
+---
+
+### 📊 Phase 3: View Output
+
+The annotated video and stats will be saved in:
+
+```bash
+output_videos/
+```
+
+You can also explore player speed, possession data, and positional maps from the output.
+
+---
 
 ## 🎥 Demo
 
 ![Football Analysis Demo](assets/ezgif-8327c2b8846f86.gif)
 
-*Example: Real-time player detection, ball tracking, and speed estimation on a football pitch.*
+---
 
-## 📌 Key Features
+## 📌 Requirements
 
-- 🧍 **Player & Referee Detection**: Detects and distinguishes players, referees, and the ball using YOLOv5.
-- 🏃 **Player Tracking & Speed Estimation**: Tracks players across frames and estimates their speed using positional data.
-- ⚽ **Ball Position Tracking**: Continuously identifies and maps ball position throughout the match.
-- 🟨 **Referee Differentiation**: Uses model class labels or color-based filtering to distinguish referees from players.
-- 🧠 **Team Classification**: Assigns players to clubs by analyzing jersey color with clustering.
-- 📍 **Pitch Keypoints & Mapping**: Detects key field markings to enable accurate homography and 2D pitch mapping.
-- 🗺️ **Zone-Based Analysis**: Identifies player positions within key pitch zones for tactical analysis.
-- 🔄 **Voronoi Diagrams**: Generates spatial control zones for each player.
-- 📊 **Statistical Outputs**: Provides data on possession, movement heatmaps, and zone occupancy.
+- Python 3.7+
+- All required packages in `requirements.txt`
 
-## 🚀 How to Run
-
-1. Clone the repository and navigate to the project directory:
-
-```bash
-git clone https://github.com/your-username/football_analysis.git
-cd football_analysis
-
--------
-
-2.Install Requirements.txt
-
+Install with:
 
 ```bash
 pip install -r requirements.txt
+```
 
-------
+---
 
-3. Place your input video in the `input_videos/` directory.
-4. Run the main script:
+## 👤 Author
 
-```bash
-python main.py
+**Ayon Sen**  
+[GitHub](https://github.com/AkagamiShnaks)  
+[LinkedIn](https://linkedin.com/in/yourprofile)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🛡️ Badges
+
+![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
+![YOLOv5](https://img.shields.io/badge/YOLOv5-Object--Detection-red)
+![OpenCV](https://img.shields.io/badge/OpenCV-Tracking-green)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
