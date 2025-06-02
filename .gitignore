@@ -1,0 +1,6 @@
+*.log
+/venv
+model/best.pt
+model/last.pt
+model/best_football_field (1).pt
+model/last_football_field (1).pt
