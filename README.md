@@ -28,10 +28,15 @@ This project presents an intelligent football match analysis system that uses Ma
 git clone https://github.com/your-username/football_analysis.git
 cd football_analysis
 
+-------
+
 2.Install Requirements.txt
+
+
 ```bash
 pip install -r requirements.txt
 
+------
 
 3. Place your input video in the `input_videos/` directory.
 4. Run the main script:
